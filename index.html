@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beerus Repair</title> <!-- Nom dans l'onglet -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -10,11 +11,16 @@
     <header>
         <nav>
           <div class="site-name">
-            <a href="#">Beerus Repair</a>
+            <a href="#"><span class="b_of_beerus">B</span>eerus Repair</a>
           </div>
             <!-- Barre de navigation -->
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher..." class="search-input">
+            <button type="submit">Rechercher</button>
+        </div>
             <ul>
-                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Réparateurs</a></li>
                 <li><a href="#">Contact</a></li>
@@ -25,44 +31,50 @@
     <main>
         <!-- Contenu principal du site -->
         <section>
-            <h1>Bienvenue sur notre site de réparation</h1>
-            <p>Reparez vos appareils au lieu de les jeter !</p>
+            <h1>Bienvenue sur Beerus Repair</h1>
+            <!-- <p class="u_h1">Reparez vos appareils au lieu de les jeter et donner leur une seconde vie !</p> -->
         </section>
 
-        <section class="service-section">
+        <section class="service-section section1">
           <div class="service-image">
-              <img src="image/ingenieurs.jpg" alt="Service 1">
+              <img src="image/ingenieurs.jpg" alt="Service 1" class="img_1">
           </div>
           <div class="service-content">
               <h2>Service 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
+              <p class="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
               <a href="#" class="btn">En savoir plus</a>
           </div>
       </section>
       
 <!-- Contenu principal, texte et images -->
 
-      <section class="service-section">
-          <div class="service-image">
-              <img src="image/réparateur_1.jpg" alt="Service 2">
-          </div>
-          <div class="service-content">
-              <h2>Service 2</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
-              <a href="#" class="btn">En savoir plus</a>
+      <section class="service-section section2">
+        <div class="service-content">
+            <h2>Service 2</h2>
+            <p class="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>  
+        <div class="service-image">
+              <img src="image/réparateur_1.jpg" alt="Service 2" class="img_2">
           </div>
       </section>
       
-      <section class="service-section">
+      <section class="service-section section3">
           <div class="service-image">
-              <img src="image/réparateur_2.jpg" alt="Service 3">
+              <img src="image/réparateur_2.jpg" alt="Service 3" class="img_3">
           </div>
           <div class="service-content">
               <h2>Service 3</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
+              <p class="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis aliquet tortor vel fermentum.</p>
               <a href="#" class="btn">En savoir plus</a>
           </div>
       </section>
+
+      <section>
+        <div class="about">À propos</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi aliquam laborum quas esse, quam cum rerum accusantium, deleniti consectetur, deserunt nulla maiores repellendus fugiat dolorum aperiam laboriosam! Dolor, necessitatibus.</p>
+      </section>
+
     </main>
     
     <footer>
@@ -70,6 +82,6 @@
         <p>© 2023 Beerus Sama Repair. Tous droits réservés.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'kamiley', 'silent reaction';
+    src: url('../fonts/kamiley.ttf') format('ttf'),
+         url('../fonts/Silent\ Reaction.ttf') format('ttf');
+    /* Autres propriétés de la police */
+}
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
@@ -8,6 +14,27 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+
+.b_of_beerus{
+    font-family: silent reaction,serif,sans-serif;
+    font-size: xx-large;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: kamiley,liberation, liberaion sans, serif, sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF
+}
+
+/* .u_h1{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.3em;
+} */
 
 /* Styles de la barre de navigation */
 nav {
@@ -66,11 +93,13 @@ footer {
 /* Styles des sections de service */
 .service-section {
     display: flex;
+    /* display: inline-block; */
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background-color: #F0F0F0;
+    background-color: rgba(255, 255, 255, .4);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .service-image {
@@ -82,6 +111,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10%;
 }
 
 .service-content {
@@ -97,6 +127,22 @@ footer {
     margin-bottom: 20px;
 }
 
+.section1 {
+    background-color: #18b65fb9;
+}
+
+.section2 {
+    background-color: #ac4bc4b9;
+}
+
+.section3 {
+    background-color: #f5f5f5b9;
+}
+
+
+
+
+/* Barre de recherhe*/
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -107,4 +153,130 @@ footer {
 
 .btn:hover {
     background-color: #555555;
+}
+
+/* Styles de la barre de recherche */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555555;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+    }
+  
+    .service-content,
+    .service-image {
+        flex-basis: auto;
+        text-align: center;
+    }
+  
+    .service-image {
+        margin-top: 20px;
+    }
+  
+    .service-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .search-bar {
+       display: none;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input {
+        margin-bottom: 10px;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle .icon {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-toggle .icon span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-toggle.active .icon span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active .icon span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Styles du menu de navigation */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #FFFFFF;
+    }
 }
